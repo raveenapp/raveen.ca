@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(247, 250, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: white;
+    margin: 5% auto 0 auto;
+    width:40%;
+    border: 2px solid rgb(190, 193, 201);
+    padding: 2% 4% 2% 4%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#main-content {
+    text-align: center;
+}
+
+#email-logo {
+    height:auto;
+    width: 25px;
+    grid-area:"logo1";
+}
+
+#linkedin-logo {
+    height:auto;
+    width: 25px;
+    grid-area: "logo2";
+}
+
+#email-link {
+    grid-area: "link1";
+    align-self:center;
+}
+
+#linkedin-link {
+    grid-area: "link2";
+    align-self:center;
+}
+
+#grid {
+    margin-top: 3%;
+    margin-left:auto;
+    margin-right: auto;
+    display:grid;
+    grid-template-columns: 25px 200px;
+    column-gap: 12px;
+    row-gap: 7px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo1 link1"
+        "logo2 link2";
+    width:60%;
+}

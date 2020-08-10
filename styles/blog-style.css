@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(247, 250, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: white;
+    margin: 5% auto 0 auto;
+    width:40%;
+    border: 2px solid rgb(190, 193, 201);
+    padding: 2% 4% 2% 4%;
+    text-align: center;
+}
+
