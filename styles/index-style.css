@@ -1,3 +1,5 @@
+* {box-sizing:border-box}
+
 body {
     background-color: #222831;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,9 +13,9 @@ body {
     text-align: center;
 }
 
-#container {
-    margin: 1% auto 0 auto;
-    width:30%;
+#text-container {
+    margin: 1% auto 1% auto;
+    width:500px;
     padding: 0% 4% 2% 4%;
     text-align: center;
 }
@@ -22,21 +24,171 @@ body {
     height: auto;
     width: 45%;
     text-align: center;
-    
 }
 
-p{
+#intro{
     margin-top: 5%;
     text-align: left;
 }
 
-ul{
-    text-align: left;
-    list-style-position: inside;
+.timeline-container{
+    min-height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.index-links {
-    text-decoration: none;
-    color: rgb(0,0,100);
+.timeline{
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
 }
 
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: #393e46;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h1{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.timeline-content h2{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    /* if i want to change content font */
+}
+
+@media only screen and (min-width: 760px){
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd){
+        float:left;
+        clear:right;
+    }
+    .timeline ul li:nth-child(even){
+        float:right;
+        clear:left;
+    }
+}
+
+.break {
+    color:#00adb5;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
