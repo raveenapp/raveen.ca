@@ -1,4 +1,3 @@
-* {box-sizing:border-box}
 
 body {
     background-color: #222831;
@@ -46,20 +45,23 @@ body {
     position: relative;
 }
 
-.timeline ul{
-    list-style: none;
+.timeline_list {
+  list-style: none;
 }
-
-.timeline ul li{
+.timeline_list li {
     padding: 20px;
     background-color: #393e46;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.timeline ul li:last-child{
-    margin-bottom: 0;
+.block-list li{
+  list-style: disc;
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-left: 40px;
 }
+
 
 .timeline-content h1{
     font-size: 20px;
@@ -74,24 +76,12 @@ body {
     margin-bottom: 10px;
 }
 
-.timeline-content p{
-    /* if i want to change content font */
+.timeline_block h2 {
+  margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 760px){
-    .timeline ul li {
-        width: 50%;
-        margin-bottom: 20px;
-        position: relative;
-    }
-    .timeline ul li:nth-child(odd){
-        float:left;
-        clear:right;
-    }
-    .timeline ul li:nth-child(even){
-        float:right;
-        clear:left;
-    }
+.indent {
+  padding-left: 35px;
 }
 
 .break {
